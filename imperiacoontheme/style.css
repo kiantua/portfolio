@@ -1,0 +1,310 @@
+/*
+Theme Name: Imperiacoon
+Theme URI: http://imperiacoon.ru
+Description: коты, мей-куны
+Version:   1.1.6
+Author: Киричек Антон
+.
+*/
+
+@font-face {
+    font-family: "Georgia", Serif ;
+    src: url('fonts/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #0a141b;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {text-decoration:none; color:black}
+a:active {text-decoration:none; color:black}
+a:visited {text-decoration:none; color:black}
+
+
+.main-wrapper  {
+    margin: 0 auto;
+    width: 1300px;
+    background: url("img/top-bckground.png") no-repeat top center;
+}
+
+/*********HEADER*******/
+
+
+.header {
+    display: block;
+    position: relative;
+    height: 534px;
+}
+
+.caption{
+    position: absolute;
+    width: 765px;
+    height:151px;
+    background: url("img/caption.png") no-repeat top left;
+    margin-left: 162px;
+    margin-top: 23px;
+
+}
+
+.left-cat {
+    background: url("img/Header-Leftcat.png") no-repeat;
+    top: 185px;
+    position: absolute;
+    left: 430px;
+    width: 667px;
+    height: 351px;
+}
+
+.right-cat {
+    background: url("img/Header-Rightcat.png") no-repeat;
+    position: absolute;
+    left: 703px;
+    top: 0;
+    width: 420px;
+    height: 525px;
+    z-index: 2;
+}
+
+
+.ImperiLine {
+    background: url("img/caption-imperia.png") no-repeat;
+    position: absolute;
+    width: 397px;
+    height: 95px;
+    left: 188px;
+    top: 20.5px;
+    z-index: 4;
+
+}
+
+
+/***************MENU************/
+
+div#menu_sidebar{
+    margin-left: 78px;
+}
+
+div#menu_sidebar>ul li {
+    background: url("img/sidebar-item.png") no-repeat;
+    width: 252px;
+    height: 41px;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 41px;
+}
+
+div#menu_sidebar>ul li:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.my__class>a{
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my__class {
+    background: url("img/sidebar-item.png") no-repeat;
+    width: 252px;
+    height: 41px;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 41px;
+}
+
+.my__class:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.sidebar{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.menu-item{
+    background: url("img/sidebar-item.png") no-repeat;
+    width: 252px;
+    height: 41px;
+    margin-bottom: 12px;
+}
+
+.sidebar-item{
+    background: url("img/sidebar-item.png") no-repeat;
+    width: 252px;
+    height: 41px;
+    margin-bottom: 12px;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/****** CONTENT********/
+
+
+.content{
+    background: url("img/news-bckrnd.png") repeat-y;
+    width: 876px;
+    min-height: 1025px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 25px;
+    z-index: 3;
+}
+
+.uzor{
+    background: url("img/news-left-top.png") no-repeat;
+    width: 140px;
+    height: 147px;
+    z-index: 4;
+}
+
+.left-top {
+    position: absolute;
+    left: -12px;
+    top: -18px;
+}
+
+.right-top{
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+    position: absolute;
+    right: -12px;
+    top: -18px;
+}
+
+.right-btm{
+    position: absolute;
+    bottom:-18px;
+    right:-12px;
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+}
+
+.left-btm{
+    position: absolute;
+    left: -12px;
+    bottom: -18px;
+    -moz-transform: rotate(270deg); /* Для Firefox */
+    -ms-transform: rotate(270deg); /* Для IE */
+    -webkit-transform: rotate(270deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(270deg); /* Для Opera */
+    transform: rotate(270deg);
+}
+
+.news {
+    margin: 20px 60px 150px 60px;
+    height: inherit;
+
+}
+
+
+/********FOOTER******/
+
+.footer{
+    height: 571px;
+    position: absolute;
+    margin-top: -350px;
+}
+
+.btm-lft-bckgrnd{
+    width: 1283px;
+    height: 571px;
+    background: url("img/bottom-bckground-left.png") no-repeat;
+
+}
+
+.btm-right-bckgrnd{
+    position: absolute;
+    background: url("img/bottom-bckground-right.png") no-repeat;
+    width: 640px;
+    height: 481px;
+    left: 660px;
+    top: -21px;
+}
+
+.btm-lft-cat{
+    background-image: url("img/btm-lft-cat.png");
+    position: absolute;
+    left: 175px;
+    top: 86px;
+    width: 272px;
+    height: 446px;
+    z-index: 4;
+}
+
+.btm-right-cat{
+    background-image: url("img/btm-right-cat.png");
+    position: absolute;
+    left: 294px;
+    top: 175px;
+    width: 648px;
+    height: 398px;
+    z-index: 5;
+}
+.footer-text{
+    position: absolute;
+    left: 948px;
+    bottom: 20px;
+}
+
+.footer-text a,
+.footer-text span {
+    display:block;
+    color: #3cd7ff;
+    margin-bottom: 3px;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+/******WIDGETS******/
+.widgets-wrapper{
+    position: relative;
+    margin-top: 30px;
+    box-sizing: border-box;
+    margin-left: 78px;
+}
+
+li.widget {
+    margin-bottom: 12px;
+}
+
+li.widget>h1 {
+    margin-left: 28px;
+    color: white;
+}
